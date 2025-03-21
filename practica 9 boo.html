@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 9 - Bootstrap</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Página</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Contenido Principal -->
+    <div class="container mt-4">
+        <article>
+            <div class="row">
+                <div class="col-md-6 bg-light p-3">Columna 1 con Bootstrap</div>
+                <div class="col-md-6 bg-secondary text-white p-3">Columna 2 con Bootstrap</div>
+            </div>
+        </article>
+    
+        <!-- Tabla -->
+        <div class="table-responsive mt-4">
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>País</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CARLOS RODAS</td>
+                        <td>25</td>
+                        <td>México</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>DANIEL CALDERON</td>
+                        <td>30</td>
+                        <td>Argentina</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Tarjetas -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/example.jpg" class="card-img-top" alt="Imagen">
+                    <div class="card-body">
+                        <h5 class="card-title">Título 1</h5>
+                        <p class="card-text">Descripción breve de la tarjeta.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/example2.jpg" class="card-img-top" alt="Imagen">
+                    <div class="card-body">
+                        <h5 class="card-title">Título 2</h5>
+                        <p class="card-text">Descripción breve de la tarjeta.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2025 Mi Página Web - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
